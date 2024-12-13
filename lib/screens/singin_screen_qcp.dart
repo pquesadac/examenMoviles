@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:examen_qcpablo/screens/home_screen_qcp.dart';
+import 'package:examen_qcpablo/screens/listview_screen_qcp.dart';
 
 class SignInScreenQCP extends StatefulWidget {
   const SignInScreenQCP({Key? key}) : super(key: key);
@@ -26,6 +27,11 @@ class _SignInScreenQCPState extends State<SignInScreenQCP> {
       print('Usuario: ${_usuario.text}');
       print('Contraseña: ${_contrasena.text}');
       
+       Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (context) => const ListViewScreenQCP()
+        )
+      );
     }
   }
 
