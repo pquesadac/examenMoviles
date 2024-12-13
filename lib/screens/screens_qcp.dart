@@ -1,0 +1,1 @@
+export 'package:examen_qcpablo/screens/home_screen_qcp.dart';
